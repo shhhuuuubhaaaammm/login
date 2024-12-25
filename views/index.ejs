@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/logo-main.png" class="logo-img">
+        <div class="login-container">
+            <h2>Log In</h2>
+            <form id="signupForm" method="POST" action="/infos/data">
+                <div class="input-group">
+                    <label for="Name">Name</label>
+                    <input type="text" id="Name" placeholder="Enter your Name" required name="name">
+                </div>
+                <div class="input-group">
+                    <label for="EmployeeID">EmployeeID</label>
+                    <input type="text" id="EmployeeID" placeholder="Enter your EmployeeID" required name="employeeID">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email" required name="email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required name="password">
+                </div>
+                
+                <div class="input-group">
+                    <label for="contact">Contact No.</label>
+                    <input type="text" id="contact" placeholder="Enter your Contact No." required name="contact">
+                </div>
+                
+                <button type="submit" class="login-btn">Log In</button>
+                <div class="error-message" id="errorMessage"></div>
+                <div class="input-group">
+                    <p>Forgot Password?</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
